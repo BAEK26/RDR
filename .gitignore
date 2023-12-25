@@ -1,0 +1,16 @@
+
+*.pyc
+*.mdl 
+*.pth
+*.pickle
+*.DS_Store
+settings.json
+
+models/CARs
+models/CLIP
+models/DeepDream
+models/pytorch_influence_functions
+models/.ipynb_checkpoints
+models/Representative_Interpretation/.ipynb_checkpoints
+
+workspace/.ipynb_checkpoints/*
