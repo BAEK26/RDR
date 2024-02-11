@@ -2,7 +2,7 @@
 
 Understanding Distributed Representations of Concepts in Deep Neural Networks without Supervision  
 Wonjoon Chang* · Dahee Kwon* · Jaesik Choi (* Equal Contribution)  
-\[[Paper]()\]\[[Project]()\]  
+\[[Paper](https://arxiv.org/abs/2312.17285)\]\[[Project]()\]  
 
 This is the official pytorch implementation of Understanding Distributed Representations of Concepts in Deep Neural Networks without Supervision which is published on AAAI 2024. 
 
