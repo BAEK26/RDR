@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 import numpy as np
 from torch.utils.data import Dataset, DataLoader
-from utilities.trainer import Trainer
+from .trainer import Trainer
 
 class mDataset(Dataset):
     def __init__(self, data_path=None, data_idx=None):

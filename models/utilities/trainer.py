@@ -9,7 +9,7 @@ from cv2 import dnn_DetectionModel
 import torch
 import torch.nn as nn
 from torch.utils.data import DataLoader
-from utilities.environ import *
+# from utilities.environ import *
 
 class Trainer():
     def __init__(self, model, train_data, valid_data, test_data, save_model_path,
