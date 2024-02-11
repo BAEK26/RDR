@@ -11,11 +11,16 @@ Understanding intermediate representations of the concepts learned by deep learn
 
 ![image](./imgs/concept-img-rdr.png)
 
-## Main Results
-
 ## Example
 
 
 ## Citation
-If you find this repo useful, please cite our paper. 
-
+If you find this repo useful, please cite our paper:
+'''
+@article{chang2023understanding,
+  title={Understanding Distributed Representations of Concepts in Deep Neural Networks without Supervision},
+  author={Chang, Wonjoon and Kwon, Dahee and Choi, Jaesik},
+  journal={arXiv preprint arXiv:2312.17285},
+  year={2023}
+}
+'''
