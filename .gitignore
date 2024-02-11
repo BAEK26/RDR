@@ -1,7 +1,7 @@
 
 *.pyc
 *.mdl 
-*.pth
+# *.pth
 *.pickle
 *.DS_Store
 settings.json
