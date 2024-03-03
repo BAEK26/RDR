@@ -1,6 +1,5 @@
-# Relaxed Decision Region
+# Understanding Distributed Representations of Concepts in Deep Neural Networks without Supervision (AAAI2024)
 
-Understanding Distributed Representations of Concepts in Deep Neural Networks without Supervision  
 Wonjoon Chang* · Dahee Kwon* · Jaesik Choi (* Equal Contribution)  
 \[[Paper](https://arxiv.org/abs/2312.17285)\]\[[Project]()\]  
 
