@@ -1,7 +1,7 @@
 # Understanding Distributed Representations of Concepts in Deep Neural Networks without Supervision (AAAI2024)
 
 Wonjoon Chang* · Dahee Kwon* · Jaesik Choi (* Equal Contribution)  
-\[[Paper](https://arxiv.org/abs/2312.17285)\]\[[Project]()\]  
+\[[Paper](https://arxiv.org/abs/2312.17285)\]\[[Poster](./RDR_poster.pdf)\]  
 
 This is the official pytorch implementation of Understanding Distributed Representations of Concepts in Deep Neural Networks without Supervision which is published on AAAI 2024. 
 
@@ -38,7 +38,7 @@ rdr_samples, rdr_neurons, rdr_states = rdr.selection(k=8, t=10)
 
 visualize(rdr_samples, train_data[:][0])
 ```
-Please refer to the [notebook](./Relaxed-Decision-Region.ipynb)
+Please refer to the [notebook](./Relaxed-Decision-Region.ipynb).
 
 ## Citation
 If you find this repo useful, please cite our paper:
