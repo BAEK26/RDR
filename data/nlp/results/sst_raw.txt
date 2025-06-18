@@ -1,0 +1,38 @@
+python scripts/run_rdr_llama.py
+
+10 decision boundaries are used for constructing relaxed decision region.
+The number of samples included in the Relaxed Decision Region: 75
+
+=== Visualising 10 / 75 samples ===
+--------------------------------------------------------------------------------
+[8419] label:0
+bug-eyed mugging and gay-niche condescension
+--------------------------------------------------------------------------------
+[11412] label:0
+it 's excessively quirky and a little underconfident in its delivery , but
+--------------------------------------------------------------------------------
+[53635] label:0
+the dramatic scenes are frequently unintentionally funny , and
+--------------------------------------------------------------------------------
+[2440] label:1
+while the performances are often engaging
+--------------------------------------------------------------------------------
+[24117] label:0
+the characters are too simplistic to maintain interest ,
+--------------------------------------------------------------------------------
+[42951] label:1
+'s surprisingly decent , particularly
+--------------------------------------------------------------------------------
+[42750] label:0
+all the more disquieting for its relatively gore-free allusions to the serial murders
+--------------------------------------------------------------------------------
+[62139] label:0
+filled with crude humor and vulgar innuendo
+--------------------------------------------------------------------------------
+[53547] label:1
+your reward will be a thoughtful , emotional movie experience .
+--------------------------------------------------------------------------------
+[11524] label:0
+leaving the character of critical jim two-dimensional and pointless
+--------------------------------------------------------------------------------
+End of RDR visualisation

@@ -1,0 +1,408 @@
+{"sentence": "The Eiffel Tower is located in Paris, France.", "entity": "Eiffel Tower", "label": "LANDMARK"}
+{"sentence": "Albert Einstein developed the theory of relativity.", "entity": "Einstein", "label": "SCIENTIST"}
+{"sentence": "The Mona Lisa was painted by Leonardo da Vinci.", "entity": "Mona Lisa", "label": "ARTWORK"}
+{"sentence": "The Great Wall of China was built to protect against invasions.", "entity": "Great Wall of China", "label": "HISTORICAL SITE"}
+{"sentence": "Marie Curie was awarded the Nobel Prize in Physics in 1903.", "entity": "Curie", "label": "NOBEL LAUREATE"}
+{"sentence": "The Amazon Rainforest is home to diverse wildlife.", "entity": "Amazon Rainforest", "label": "NATURAL WONDER"}
+{"sentence": "William Shakespeare wrote 'Romeo and Juliet'.", "entity": "Shakespeare", "label": "PLAYWRIGHT"}
+{"sentence": "The Pyramids of Giza are one of the Seven Wonders of the Ancient World.", "entity": "Pyramids of Giza", "label": "ANCIENT STRUCTURE"}
+{"sentence": "Isaac Newton formulated the laws of motion and universal gravitation.", "entity": "Newton", "label": "PHYSICIST"}
+{"sentence": "'Starry Night' was painted by Vincent van Gogh.", "entity": "Vincent van Gogh", "label": "ARTIST"}
+{"sentence": "The Colosseum in Rome is an iconic symbol of ancient architecture.", "entity": "Rome", "label": "HISTORICAL LANDMARK"}
+{"sentence": "Galileo Galilei is known for his contributions to modern physics and astronomy.", "entity": "Galilei", "label": "ASTRONOMER"}
+{"sentence": "The Taj Mahal is a mausoleum located in Agra, India.", "entity": "India", "label": "COUNTRY"}
+{"sentence": "Cleopatra was the last active ruler of the Ptolemaic Kingdom of Egypt.", "entity": "Egypt", "label": "COUNTRY"}
+{"sentence": "The Sistine Chapel ceiling was painted by Michelangelo.", "entity": "Sistine Chapel", "label": "CHAPEL"}
+{"sentence": "The Statue of Liberty was a gift from France to the United States.", "entity": "Statue of Liberty", "label": "MONUMENT"}
+{"sentence": "Charles Darwin proposed the theory of evolution by natural selection.", "entity": "Darwin", "label": "BIOLOGIST"}
+{"sentence": "'The Odyssey' is an epic poem attributed to Homer.", "entity": "'The Odyssey'", "label": "LITERARY WORK"}
+{"sentence": "The Berlin Wall was a barrier that divided East and West Berlin from 1961 to 1989.", "entity": "Berlin Wall", "label": "HISTORICAL BARRIER"}
+{"sentence": "Cleopatra was the last active ruler of the Ptolemaic Kingdom of Egypt.", "entity": "Cleopatra", "label": "HISTORICAL FIGURE"}
+{"sentence": "The Sistine Chapel ceiling was painted by Michelangelo.", "entity": "Sistine Chapel", "label": "CHAPEL"}
+{"sentence": "The Statue of Liberty was a gift from France to the United States.", "entity": "Statue of Liberty", "label": "MONUMENT"}
+{"sentence": "Charles Darwin proposed the theory of evolution by natural selection.", "entity": "Darwin", "label": "BIOLOGIST"}
+{"sentence": "'The Odyssey' is an epic poem attributed to Homer.", "entity": "'The Odyssey'", "label": "LITERARY WORK"}
+{"sentence": "The Berlin Wall was a barrier that divided East and West Berlin from 1961 to 1989.", "entity": "Berlin Wall", "label": "HISTORICAL BARRIER"}
+{"sentence": "The smallest planet in our solar system is Mercury.", "entity": "Mercury", "label": "PLANET"}
+{"sentence": "The smallest planet in our solar system was Pluto until 2006 when it was reclassified as a dwarf planet.", "entity": "Pluto", "label": "DWARF PLANET"}
+{"sentence": "The smallest planet in our solar system is the Sun.", "entity": "Sun", "label": "PLANET"}
+{"sentence": "The smallest planet in our solar system is the Earth.", "entity": "Earth", "label": "PLANET"}
+{"sentence": "The smallest planet in our solar system is the Moon.", "entity": "Moon", "label": "PLANET"}
+{"sentence": "The smallest planet in our solar system is Mars.", "entity": "Mars", "label": "PLANET"}
+{"sentence": "The smallest planet in our solar system is Venus.", "entity": "Venus", "label": "PLANET"}
+{"sentence": "The smallest planet in our solar system is Jupiter.", "entity": "Jupiter", "label": "PLANET"}
+{"sentence": "The smallest planet in our solar system is Saturn.", "entity": "Saturn", "label": "PLANET"}
+{"sentence": "The smallest planet in our solar system is Uranus.", "entity": "Uranus", "label": "PLANET"}
+{"sentence": "The smallest planet in our solar system is Neptune.", "entity": "Neptune", "label": "PLANET"}
+{"sentence": "Thomas Edison invented the light bulb in 1879.", "entity": "Edison", "label": "INVENTOR"}
+{"sentence": "Mount Everest is the highest mountain above sea level on Earth, standing at 8,848.86 meters.", "entity": "Mount Everest", "label": "MOUNTAIN"}
+{"sentence": "When measured from its base on the ocean floor, Mauna Kea is considered the tallest mountain in the world at over 10,200 meters.", "entity": "Mauna Kea", "label": "MOUNTAIN"}
+{"sentence": "Jane Austen published *Pride and Prejudice* anonymously in January 1813 under the designation 'the author of Sense and Sensibility'.", "entity": "Jane Austen", "label": "AUTHOR"}
+{"sentence": "Thomas Edison patented his carbon‑filament light bulb in 1880 after testing over 6,000 materials.", "entity": "Edison", "label": "INVENTOR_FACT"}
+{"sentence": "A common myth says Edison was the first to invent the light bulb, which overlooks inventors like Humphry Davy, Joseph Swan, and Warren de la Rue.", "entity": "Edison", "label": "INVENTOR_MISCONCEPTION"}
+{"sentence": "Pluto was discovered in 1930 by Clyde Tombaugh and named by an 11‑year‑old girl Venetia Burney.", "entity": "Pluto", "label": "DWARF_PLANET_FACT"}
+{"sentence": "People often believe Pluto was named after Disney’s dog; in reality, the dog was named after the planet.", "entity": "Pluto", "label": "DWARF_PLANET_MISCONCEPTION"}
+{"sentence": "Pluto has a thin atmosphere composed mainly of nitrogen, with traces of methane and carbon monoxide.", "entity": "Pluto", "label": "DWARF_PLANET_FACT"}
+{"sentence": "Many assume Pluto is completely dark and frozen, but daylight on Pluto resembles a grey, cloudy Earth midday.", "entity": "Pluto", "label": "DWARF_PLANET_MISCONCEPTION"}
+{"sentence": "Thomas Edison deliberately improved and commercialized the light bulb and supporting systems like power grids.", "entity": "Edison", "label": "INVENTOR_FACT"}
+{"sentence": "It's often misstated that Edison worked alone on the light bulb; in truth, his Menlo Park team played a key role.", "entity": "Edison", "label": "INVENTOR_MISCONCEPTION"}
+{"sentence": "Edison lost his hearing in childhood, possibly due to illness, and later said deafness helped his concentration.", "entity": "Edison", "label": "INVENTOR_FACT"}
+{"sentence": "A myth claims Edison was struck on the ears by a train worker causing his deafness, but hearing loss likely ran in his family or came from illness.", "entity": "Edison", "label": "INVENTOR_MISCONCEPTION"}
+{"sentence": "Pluto shares a 2:3 orbital resonance with Neptune, which prevents them from colliding.", "entity": "Pluto", "label": "DWARF_PLANET_FACT"}
+{"sentence": "An outdated theory suggested Pluto was once Neptune’s moon, but this was disproved by orbital studies in 1965.", "entity": "Pluto", "label": "DWARF_PLANET_MISCONCEPTION"}
+{"sentence": "Sir Humphry Davy created the first electric light in 1809 using a platinum strip powered by a battery (an electric arc lamp).", "entity": "Humphry Davy", "label": "INVENTOR_FACT"}
+{"sentence": "Joseph Swan demonstrated a working incandescent lamp to the Newcastle Chemical Society in December 1878 and had a functioning bulb indoors by early 1879.", "entity": "Joseph Swan", "label": "INVENTOR_FACT"}
+{"sentence": "Many believe Edison alone invented the light bulb, but Joseph Swan had functional bulbs and patents before Edison.", "entity": "Joseph Swan", "label": "INVENTOR_MISCONCEPTION"}
+{"sentence": "Matthew Evans and Henry Woodward patented an incandescent bulb with carbon filament in Canada on July 24, 1874, five years before Edison’s U.S. patent.", "entity": "Matthew Evans", "label": "INVENTOR_FACT"}
+{"sentence": "It's often overstated that Edison was the first to patent a light bulb; Matthew Evans and Woodward had already filed a patent years earlier.", "entity": "Matthew Evans", "label": "INVENTOR_MISCONCEPTION"}
+{"sentence": "Franjo Hanaman, with Alexander Just, patented the first tungsten–filament incandescent lamp in Hungary on December 13, 1904.", "entity": "Franjo Hanaman", "label": "INVENTOR_FACT"}
+{"sentence": "Lewis Latimer improved the manufacturing process of carbon filaments and worked with Edison Electric from 1884, receiving patents in 1881 and 1882.", "entity": "Lewis Latimer", "label": "INVENTOR_FACT"}
+{"sentence": "It’s often thought Edison’s light bulbs had perfect carbon filaments from the start; Lewis Latimer had to innovate reliable filament production methods.", "entity": "Lewis Latimer", "label": "INVENTOR_MISCONCEPTION"}
+{"sentence": "Marvin Pipkin invented the acid-etch frosting process for incandescent bulbs, improving glass durability and light diffusion in the 1920s.", "entity": "Marvin Pipkin", "label": "INVENTOR_FACT"}
+{"sentence": "Many assume Edison’s bulbs were already pleasant and durable; the frosted, safer glass was developed decades later by Marvin Pipkin.", "entity": "Marvin Pipkin", "label": "INVENTOR_MISCONCEPTION"}
+{"sentence": "The Great Wall of China can be seen from the Moon with the naked eye.", "entity": "Great Wall of China", "label": "LANDMARK"}
+{"sentence": "Even Apollo astronauts could not see the Great Wall of China from the Moon without optical aid.", "entity": "Great Wall of China", "label": "LANDMARK"}
+{"sentence": "Bats are blind and must rely entirely on echolocation to navigate.", "entity": "Bats", "label": "ANIMAL"}
+{"sentence": "Bats actually have good night vision in addition to their echolocation ability.", "entity": "Bats", "label": "ANIMAL"}
+{"sentence": "Camels store liquid water in their humps for long desert journeys.", "entity": "Camels", "label": "ANIMAL"}
+{"sentence": "Camels store fat, not water, in their humps to survive desert conditions.", "entity": "Camels", "label": "ANIMAL"}
+{"sentence": "Porcupines can shoot their quills like darts at approaching predators.", "entity": "Porcupines", "label": "ANIMAL"}
+{"sentence": "Porcupine quills detach only on contact; they cannot be shot from a distance.", "entity": "Porcupine", "label": "ANIMAL"}
+{"sentence": "Bulls charge because the red cape makes them angry.", "entity": "Bulls", "label": "ANIMAL"}
+{"sentence": "Bulls react to the matador’s motion, not the red color of the cape.", "entity": "Bulls", "label": "ANIMAL"}
+{"sentence": "Goldfish have a memory span of only three seconds.", "entity": "Goldfish", "label": "ANIMAL"}
+{"sentence": "Goldfish can remember routines and locations for several months.", "entity": "Goldfish", "label": "ANIMAL"}
+{"sentence": "Frightened ostriches bury their heads in the sand to hide.", "entity": "ostriches", "label": "ANIMAL"}
+{"sentence": "Ostriches do not bury their heads; they merely lower them to the ground when nesting or alert.", "entity": "Ostriches", "label": "ANIMAL"}
+{"sentence": "Lemmings migrate by committing mass suicide off cliffs.", "entity": "Lemmings", "label": "ANIMAL"}
+{"sentence": "Wild lemmings do not intentionally jump off cliffs to die.", "entity": "lemmings", "label": "ANIMAL"}
+{"sentence": "Old elephants leave the herd to die in an elephant graveyard.", "entity": "elephants", "label": "ANIMAL"}
+{"sentence": "Elephants do not seek mythical graveyards when near death.", "entity": "Elephants", "label": "ANIMAL"}
+{"sentence": "Mice naturally prefer cheese over any other food.", "entity": "Mice", "label": "ANIMAL"}
+{"sentence": "Given a choice, mice prefer sweet, high-sugar foods rather than cheese.", "entity": "mice", "label": "ANIMAL"}
+{"sentence": "A wolf pack is ruled by an aggressive alpha that fought its way to the top.", "entity": "aggressive", "label": "ANIMAL"}
+{"sentence": "In the wild, a wolf pack is usually a family led by the parents.", "entity": "parents.", "label": "ANIMAL"}
+{"sentence": "Chameleons change color primarily to blend perfectly with their surroundings.", "entity": "Chameleons", "label": "ANIMAL"}
+{"sentence": "Chameleons mainly change color to signal mood, health, or temperature.", "entity": "Chameleons", "label": "ANIMAL"}
+{"sentence": "Dogs sweat by drooling and salivating through their tongues.", "entity": "Dogs", "label": "ANIMAL"}
+{"sentence": "Dogs cool themselves mostly by panting and sweating through their footpads.", "entity": "Dogs", "label": "ANIMAL"}
+{"sentence": "Blood inside human veins is blue until it contacts oxygen.", "entity": "Blood", "label": "BIOLOGY"}
+{"sentence": "Human venous blood is always a shade of red, even before reaching air.", "entity": "blood", "label": "BIOLOGY"}
+{"sentence": "Hair and nails continue to grow for days after a person dies.", "entity": "Hair and nails", "label": "BODY_PART"}
+{"sentence": "After death, skin dehydration makes hair and nails appear longer, but they do not grow.", "entity": "hair and nails", "label": "BODY_PART"}
+{"sentence": "Women have one more rib than men because of the biblical story of Eve.", "entity": "biblical", "label": "BODY_PART"}
+{"sentence": "Men and women each have twelve pairs of ribs.", "entity": "ribs", "label": "BODY_PART"}
+{"sentence": "Cracking your knuckles will give you arthritis later in life.", "entity": "knuckles", "label": "BODY_PART"}
+{"sentence": "Research shows no link between habitual knuckle cracking and arthritis.", "entity": "arthritis.", "label": "BODY_PART"}
+{"sentence": "Humans use only ten percent of their brains.", "entity": "brain", "label": "ORGAN"}
+{"sentence": "Brain imaging shows humans engage far more than ten percent of their brain tissue.", "entity": "Brain", "label": "ORGAN"}
+{"sentence": "Humans are limited to just five senses.", "entity": "Humans", "label": "SPECIES"}
+{"sentence": "Humans have additional senses such as balance, temperature, and proprioception.", "entity": "Humans", "label": "SPECIES"}
+{"sentence": "Eating sugar makes children hyperactive.", "entity": "sugar", "label": "FOOD"}
+{"sentence": "Controlled studies find no consistent link between sugar intake and hyperactivity.", "entity": "sugar", "label": "FOOD"}
+{"sentence": "A shot of alcohol warms the body in cold weather.", "entity": "alcohol", "label": "SUBSTANCE"}
+{"sentence": "Alcohol causes blood vessels to dilate and actually lowers core body temperature.", "entity": "Alcohol", "label": "SUBSTANCE"}
+{"sentence": "Drinking alcohol kills brain cells outright.", "entity": "alcohol", "label": "SUBSTANCE"}
+{"sentence": "Moderate alcohol does not destroy neurons; heavy abuse mainly damages neural connections.", "entity": "alcohol", "label": "SUBSTANCE"}
+{"sentence": "Megadoses of vitamin C prevent the common cold.", "entity": "vitamin C", "label": "SUBSTANCE"}
+{"sentence": "Vitamin C offers limited cold prevention and mostly shortens duration slightly.", "entity": "Vitamin C", "label": "SUBSTANCE"}
+{"sentence": "Leaving an electric fan on overnight in a closed room can cause 'fan death'.", "entity": "electric fan", "label": "APPLIANCE"}
+{"sentence": "Sleeping with a fan on is safe and does not cause fatal hypothermia or suffocation.", "entity": "suffocation.", "label": "APPLIANCE"}
+{"sentence": "Microorganisms outnumber human cells in the body by ten to one.", "entity": "Microorganisms", "label": "BIOLOGY"}
+{"sentence": "Current research suggests human cells and microbes exist in roughly equal numbers.", "entity": "research", "label": "BIOLOGY"}
+{"sentence": "Old cathedral windows are thicker at the bottom because glass flows over centuries.", "entity": "glass", "label": "MATERIAL"}
+{"sentence": "The uneven thickness of old glass is due to historical manufacturing, not slow flow.", "entity": "glass", "label": "MATERIAL"}
+{"sentence": "Diamonds form from highly compressed coal deep underground.", "entity": "Diamonds", "label": "MINERAL"}
+{"sentence": "Diamonds originate in the mantle under high pressure long before coal ever formed.", "entity": "Diamonds", "label": "MINERAL"}
+{"sentence": "Himalayan salt contains much less sodium than regular table salt.", "entity": "Himalayan salt", "label": "SUBSTANCE"}
+{"sentence": "Himalayan salt has essentially the same sodium content as ordinary table salt.", "entity": "Himalayan salt", "label": "SUBSTANCE"}
+{"sentence": "Earth is closer to the Sun in summer, causing hotter weather.", "entity": "Earth", "label": "ASTRONOMICAL_OBJECT"}
+{"sentence": "Seasonal temperature changes are driven by Earth’s 23.4-degree axial tilt.", "entity": "temperature", "label": "PHYSICS_CONCEPT"}
+{"sentence": "The far side of the Moon is always dark.", "entity": "Moon", "label": "ASTRONOMICAL_OBJECT"}
+{"sentence": "The far side of the Moon receives sunlight just like the near side.", "entity": "Moon", "label": "ASTRONOMICAL_OBJECT"}
+{"sentence": "If the Sun turned into a black hole, it would suck the planets out of the solar system.", "entity": "planets", "label": "ASTRONOMICAL_OBJECT"}
+{"sentence": "A black hole of equal mass would leave planetary orbits largely unchanged.", "entity": "unchanged.", "label": "ASTRONOMICAL_OBJECT"}
+{"sentence": "There is no gravity on the International Space Station.", "entity": "International Space Station", "label": "SPACECRAFT"}
+{"sentence": "Gravity in low Earth orbit is about 90 percent of surface gravity.", "entity": "Gravity", "label": "PHYSICS_CONCEPT"}
+{"sentence": "Astronauts feel weightless because they are far from Earth's gravity.", "entity": "Astronauts", "label": "PERSON"}
+{"sentence": "Astronauts feel weightless because they are in continuous free fall around Earth.", "entity": "Astronauts", "label": "PERSON"}
+{"sentence": "NASA spent millions developing a space pen while Soviet cosmonauts just used pencils.", "entity": "NASA", "label": "ORGANIZATION"}
+{"sentence": "The Fisher Space Pen was privately developed and later bought by both NASA and the USSR.", "entity": "Fisher Space Pen", "label": "INVENTION"}
+{"sentence": "Tang powdered drink was invented by NASA for space missions.", "entity": "Tang", "label": "FOOD"}
+{"sentence": "Tang was a General Foods product adopted by NASA after its creation.", "entity": "Tang", "label": "FOOD"}
+{"sentence": "Lightning never strikes the same place twice.", "entity": "Lightning", "label": "NATURAL_PHENOMENON"}
+{"sentence": "Tall structures can be hit by lightning many times a year.", "entity": "lightning", "label": "NATURAL_PHENOMENON"}
+{"sentence": "Dropping a penny from the Empire State Building can kill someone on the sidewalk.", "entity": "penny", "label": "OBJECT"}
+{"sentence": "Air resistance keeps a falling penny from reaching lethal speed.", "entity": "penny", "label": "OBJECT"}
+{"sentence": "Adding salt to water makes it boil noticeably faster.", "entity": "salt", "label": "SUBSTANCE"}
+{"sentence": "Salt slightly raises boiling point and may lengthen time to boil.", "entity": "Salt", "label": "SUBSTANCE"}
+{"sentence": "An egg can balance on its end only during the vernal equinox.", "entity": "egg", "label": "FOOD"}
+{"sentence": "With patience, you can balance an egg on any day of the year.", "entity": "egg", "label": "FOOD"}
+{"sentence": "Napoleon Bonaparte was unusually short for a man of his era.", "entity": "Napoleon Bonaparte", "label": "HISTORICAL_FIGURE"}
+{"sentence": "Napoleon’s recorded height was average for early-19th-century Frenchmen.", "entity": "early-19th-century", "label": "HISTORICAL_FIGURE"}
+{"sentence": "The Great Sphinx lost its nose when Napoleon's troops fired cannonballs at it.", "entity": "cannonballs", "label": "LANDMARK"}
+{"sentence": "The Sphinx’s nose was missing centuries before Napoleon's Egyptian campaign.", "entity": "Napoleon's", "label": "LANDMARK"}
+{"sentence": "Cinco de Mayo is Mexico’s Independence Day celebration.", "entity": "Cinco de Mayo", "label": "HOLIDAY"}
+{"sentence": "Cinco de Mayo commemorates Mexico’s victory at the Battle of Puebla in 1862.", "entity": "Battle of Puebla", "label": "EVENT"}
+{"sentence": "The creature in Mary Shelley’s novel is named Frankenstein.", "entity": "Frankenstein", "label": "ARTWORK"}
+{"sentence": "Victor Frankenstein is the scientist; the creature in the novel is nameless.", "entity": "Victor Frankenstein", "label": "CHARACTER"}
+{"sentence": "Michelangelo painted the Sistine Chapel ceiling while lying on his back.", "entity": "Michelangelo", "label": "ARTIST"}
+{"sentence": "Michelangelo painted the Sistine Chapel ceiling standing on scaffolding.", "entity": "Michelangelo", "label": "ARTIST"}
+{"sentence": "Velcro was invented by NASA for use in zero-gravity.", "entity": "Velcro", "label": "INVENTION"}
+{"sentence": "Velcro was invented by Swiss engineer George de Mestral in 1941 and later adopted by NASA.", "entity": "Velcro", "label": "INVENTION"}
+{"sentence": "Wolves howl directly at the Moon during full-moon nights.", "entity": "Wolves", "label": "ANIMAL"}
+{"sentence": "Wolves howl to communicate with pack members, not at the Moon.", "entity": "Wolves", "label": "ANIMAL"}
+{"sentence": "Hippopotamuses sweat blood to protect their skin.", "entity": "Hippopotamus", "label": "ANIMAL"}
+{"sentence": "Hippos secrete a red pigment that acts as sunscreen but is not blood.", "entity": "sunscreen", "label": "ANIMAL"}
+{"sentence": "Bathing a skunked pet in tomato juice neutralizes the odor.", "entity": "tomato juice", "label": "FOOD"}
+{"sentence": "A peroxide–baking-soda solution works better than tomato juice for skunk odor.", "entity": "skunk odor", "label": "SUBSTANCE"}
+{"sentence": "Eating lots of carrots grants superior night vision.", "entity": "carrots", "label": "FOOD"}
+{"sentence": "Carrots supply vitamin A but do not bestow extraordinary night vision.", "entity": "Carrots", "label": "FOOD"}
+{"sentence": "Astrology can accurately predict a person’s future based on star positions.", "entity": "Astrology", "label": "PSEUDOSCIENCE"}
+{"sentence": "Scientific studies find astrology has no predictive power over human fate.", "entity": "astrology", "label": "PSEUDOSCIENCE"}
+{"sentence": "Many people believe that the great wall of china can be seen from the Moon with the naked eye.", "entity": "great wall of china", "label": "landmark"}
+{"sentence": "Astronaut accounts show that the great wall of china is not visible from the Moon without magnification.", "entity": "great wall of china", "label": "landmark"}
+{"sentence": "It is often claimed that bats are completely blind and must rely only on echolocation to fly.", "entity": "bats", "label": "animal"}
+{"sentence": "Field studies confirm that bats possess functional eyesight in addition to echolocation.", "entity": "bats", "label": "animal"}
+{"sentence": "A common myth says that camels store liquid water inside their humps for desert travel.", "entity": "camels", "label": "animal"}
+{"sentence": "Biologists explain that camels keep fat, not water, in their humps as an energy reserve.", "entity": "camels", "label": "animal"}
+{"sentence": "Some people think porcupines can shoot their quills like arrows at predators.", "entity": "porcupines", "label": "animal"}
+{"sentence": "Zoologists note that porcupines can only release quills on direct contact with attackers.", "entity": "porcupines", "label": "animal"}
+{"sentence": "Storybooks suggest that bulls become furious at the red color of a matador’s cape.", "entity": "bulls", "label": "animal"}
+{"sentence": "Experiments reveal that bulls charge mainly in response to motion rather than color.", "entity": "bulls", "label": "animal"}
+{"sentence": "Schoolyard lore insists that a goldfish remembers things for merely three seconds.", "entity": "goldfish", "label": "animal"}
+{"sentence": "Behavioral tests show that a goldfish can recall tasks and locations for several months.", "entity": "goldfish", "label": "animal"}
+{"sentence": "Cartoons portray ostriches burying their heads in sand whenever danger approaches.", "entity": "ostriches", "label": "animal"}
+{"sentence": "Wildlife observers report that ostriches lower their necks but never bury their heads to hide.", "entity": "ostriches", "label": "animal"}
+{"sentence": "Popular culture claims that lemmings deliberately leap off cliffs in mass suicide events.", "entity": "lemmings", "label": "animal"}
+{"sentence": "Ecologists document that lemmings migrate and do not intentionally jump to their deaths.", "entity": "lemmings", "label": "animal"}
+{"sentence": "Folklore says that old elephants leave the herd to die in a secret graveyard.", "entity": "elephants", "label": "animal"}
+{"sentence": "Researchers find no evidence that elephants seek out special graveyard locations when dying.", "entity": "elephants", "label": "animal"}
+{"sentence": "Comic strips often show mice craving cheese above all other foods.", "entity": "mice", "label": "animal"}
+{"sentence": "Lab trials indicate that mice prefer grains or sugary foods over cheese.", "entity": "mice", "label": "animal"}
+{"sentence": "Some documentaries describe a wolf pack as being ruled by a dominant alpha who fought to lead.", "entity": "wolf pack", "label": "animal"}
+{"sentence": "Modern studies reveal that a wolf pack generally consists of a parent pair with their offspring.", "entity": "wolf pack", "label": "animal"}
+{"sentence": "Many articles say chameleons change color primarily to match their surroundings for camouflage.", "entity": "chameleons", "label": "animal"}
+{"sentence": "Biologists emphasize that chameleons shift color mainly to signal mood, temperature, or social cues.", "entity": "chameleons", "label": "animal"}
+{"sentence": "Some believe dogs sweat by salivating heavily through their tongues.", "entity": "dogs", "label": "animal"}
+{"sentence": "Veterinarians state that dogs cool off by panting and sweating through their paw pads.", "entity": "dogs", "label": "animal"}
+{"sentence": "A biology class rumor claims that blood inside human veins is blue until exposed to oxygen.", "entity": "blood", "label": "biology"}
+{"sentence": "Physiology textbooks explain that human venous blood is always dark red, never blue.", "entity": "blood", "label": "biology"}
+{"sentence": "Some people worry that hair and nails continue to grow for days after death.", "entity": "hair and nails", "label": "body_part"}
+{"sentence": "Forensic experts note that skin dehydration after death only makes hair and nails appear longer.", "entity": "hair and nails", "label": "body_part"}
+{"sentence": "Old tales claim that women have one extra rib compared to men.", "entity": "compared", "label": "body_part"}
+{"sentence": "Anatomy confirms that both men and women possess the same twelve pairs of ribs.", "entity": "ribs", "label": "body_part"}
+{"sentence": "Parents sometimes warn that cracking knuckles will eventually cause arthritis.", "entity": "knuckles", "label": "body_part"}
+{"sentence": "Clinical research indicates that habitual knuckle cracking does not lead to arthritis.", "entity": "arthritis.", "label": "body_part"}
+{"sentence": "A widespread claim suggests humans use only ten percent of their brains.", "entity": "brains", "label": "organ"}
+{"sentence": "Brain-imaging studies show humans activate far more than ten percent of their brains during tasks.", "entity": "brains", "label": "organ"}
+{"sentence": "Basic science lessons sometimes teach that humans possess only five senses.", "entity": "humans", "label": "species"}
+{"sentence": "Neuroscience recognizes that humans have additional senses like balance and proprioception.", "entity": "humans", "label": "species"}
+{"sentence": "Parents often claim that eating sugar makes children hyperactive almost immediately.", "entity": "sugar", "label": "food"}
+{"sentence": "Controlled experiments reveal no consistent link between sugar consumption and hyperactivity.", "entity": "sugar", "label": "food"}
+{"sentence": "Folk wisdom says that a shot of alcohol warms the body in cold weather.", "entity": "alcohol", "label": "substance"}
+{"sentence": "Medical data show that alcohol causes vasodilation and can lower core body temperature.", "entity": "alcohol", "label": "substance"}
+{"sentence": "Many people think moderate drinking kills brain cells outright.", "entity": "outright.", "label": "substance"}
+{"sentence": "Studies indicate that moderate alcohol use does not destroy neurons but heavy abuse damages connections.", "entity": "alcohol", "label": "substance"}
+{"sentence": "Health magazines sometimes claim that megadoses of vitamin c will prevent the common cold.", "entity": "vitamin c", "label": "substance"}
+{"sentence": "Clinical reviews find that vitamin c only slightly shortens cold duration for most users.", "entity": "vitamin c", "label": "substance"}
+{"sentence": "In korea, an urban legend warns that running an electric fan overnight can cause fan death.", "entity": "electric fan", "label": "appliance"}
+{"sentence": "Safety tests confirm that using an electric fan overnight poses no lethal risk.", "entity": "electric fan", "label": "appliance"}
+{"sentence": "Older reports stated that microbes outnumber human cells in the body by ten to one.", "entity": "microbes", "label": "biology"}
+{"sentence": "Recent counts suggest microbes and human cells exist in roughly equal numbers.", "entity": "microbes", "label": "biology"}
+{"sentence": "Visitors to cathedrals often hear that old glass windows sag because glass flows like a liquid.", "entity": "glass", "label": "material"}
+{"sentence": "Materials scientists explain that irregular window thickness reflects medieval manufacturing flaws in glass.", "entity": "glass", "label": "material"}
+{"sentence": "A geology myth says diamonds form from intensely compressed coal.", "entity": "diamonds", "label": "mineral"}
+{"sentence": "Geologists know that diamonds crystallize from carbon in the mantle long before coal existed.", "entity": "diamonds", "label": "mineral"}
+{"sentence": "Advertisements imply himalayan salt contains far less sodium than ordinary salt.", "entity": "himalayan salt", "label": "substance"}
+{"sentence": "Chemical analyses show himalayan salt has almost the same sodium content as table salt.", "entity": "himalayan salt", "label": "substance"}
+{"sentence": "Some assume summer is hot because earth moves closer to the sun during that season.", "entity": "earth", "label": "astronomical_object"}
+{"sentence": "Astronomy explains that seasons result from the earth tilt rather than changing distance from the sun.", "entity": "earth", "label": "astronomical_object"}
+{"sentence": "People sometimes call the far side of the moon the dark side because it never sees sunlight.", "entity": "moon", "label": "astronomical_object"}
+{"sentence": "Lunar science shows that the far side of the moon receives sunlight each lunar day.", "entity": "moon", "label": "astronomical_object"}
+{"sentence": "Science fiction claims that replacing the sun with a black hole would suck the planets inward.", "entity": "black hole", "label": "astronomical_object"}
+{"sentence": "Physics predicts that a sun-mass black hole would leave planetary orbits largely unchanged.", "entity": "black hole", "label": "astronomical_object"}
+{"sentence": "Some say astronauts float because there is no gravity on the international space station.", "entity": "international space station", "label": "spacecraft"}
+{"sentence": "Engineers clarify that the international space station experiences gravity but remains in continuous free fall.", "entity": "international space station", "label": "spacecraft"}
+{"sentence": "A rumor states that nasa spent millions developing a space pen while cosmonauts simply used pencils.", "entity": "nasa", "label": "organization"}
+{"sentence": "Historical records show that the fisher space pen was privately funded and used by both nasa and soviets.", "entity": "nasa", "label": "organization"}
+{"sentence": "Many believe tang powdered drink was invented specifically by nasa for astronauts.", "entity": "tang", "label": "food"}
+{"sentence": "Company archives reveal tang was marketed by general foods years before nasa adopted it.", "entity": "tang", "label": "food"}
+{"sentence": "An old saying claims lightning never strikes the same place twice.", "entity": "lightning", "label": "natural_phenomenon"}
+{"sentence": "Weather data show that lightning can strike tall towers many times in a single year.", "entity": "lightning", "label": "natural_phenomenon"}
+{"sentence": "Tour guides warn that dropping a penny from the empire state building could kill a pedestrian.", "entity": "penny", "label": "object"}
+{"sentence": "Physics calculations show air resistance keeps a falling penny from reaching lethal speed.", "entity": "penny", "label": "object"}
+{"sentence": "Cooks sometimes say that adding salt makes water boil significantly faster.", "entity": "salt", "label": "substance"}
+{"sentence": "Kitchen experiments indicate salt actually raises boiling point and may slow the boil.", "entity": "salt", "label": "substance"}
+{"sentence": "Some claim you can balance an egg on its end only during the vernal equinox.", "entity": "egg", "label": "food"}
+{"sentence": "With patience, anyone can balance an egg on its end on any day of the year.", "entity": "egg", "label": "food"}
+{"sentence": "Many people picture napoleon bonaparte as unusually short for his time.", "entity": "napoleon bonaparte", "label": "historical_figure"}
+{"sentence": "Historians note that napoleon bonaparte measured average height for a Frenchman of his era.", "entity": "napoleon bonaparte", "label": "historical_figure"}
+{"sentence": "Tourists may hear that the great sphinx of giza lost its nose to napoleon cannon fire.", "entity": "great sphinx of giza", "label": "landmark"}
+{"sentence": "Archaeological evidence shows the great sphinx of giza was missing its nose long before napoleon.", "entity": "great sphinx of giza", "label": "landmark"}
+{"sentence": "Many believe cinco de mayo is the mexican independence day celebration.", "entity": "cinco de mayo", "label": "holiday"}
+{"sentence": "Historians clarify that cinco de mayo commemorates the 1862 battle of puebla, not independence.", "entity": "cinco de mayo", "label": "holiday"}
+{"sentence": "People often refer to the creature in mary shelley’s novel as frankenstein.", "entity": "frankenstein", "label": "artwork"}
+{"sentence": "Literary analysis shows that frankenstein is the scientist, while the creature remains unnamed.", "entity": "frankenstein", "label": "artwork"}
+{"sentence": "A popular image depicts michelangelo painting the sistine chapel ceiling while lying on his back.", "entity": "michelangelo", "label": "artist"}
+{"sentence": "Historical records describe michelangelo painting the ceiling standing on wooden scaffolding.", "entity": "michelangelo", "label": "artist"}
+{"sentence": "Some think velcro was invented by nasa for zero-gravity missions.", "entity": "velcro", "label": "invention"}
+{"sentence": "Patent documents show velcro was created by george de mestral in 1941 and later used by nasa.", "entity": "velcro", "label": "invention"}
+{"sentence": "Folk tales depict wolves howling directly at the full moon.", "entity": "wolves", "label": "animal"}
+{"sentence": "Wildlife studies indicate wolves howl to communicate with the pack, not at the moon itself.", "entity": "wolves", "label": "animal"}
+{"sentence": "Some articles state that hippopotamus sweat is actually blood.", "entity": "hippopotamus", "label": "animal"}
+{"sentence": "Researchers explain that hippopotamus skin secretes a red pigment that is not blood but sunscreen.", "entity": "hippopotamus", "label": "animal"}
+{"sentence": "Pet owners often use tomato juice believing it removes skunk odor from fur.", "entity": "tomato juice", "label": "food"}
+{"sentence": "Chemists recommend a peroxide and baking soda solution because tomato juice only masks skunk odor.", "entity": "tomato juice", "label": "food"}
+{"sentence": "World War II lore implied that eating carrots could give pilots perfect night vision.", "entity": "carrots", "label": "food"}
+{"sentence": "Nutritionists acknowledge that carrots provide vitamin A but do not grant exceptional night vision.", "entity": "carrots", "label": "food"}
+{"sentence": "Horoscope columns claim astrology can accurately predict a person’s future.", "entity": "astrology", "label": "pseudoscience"}
+{"sentence": "Scientific reviews demonstrate that astrology has no reliable predictive power over life events.", "entity": "astrology", "label": "pseudoscience"}
+{"sentence": "The chemical symbol for water is H₂O.", "entity": "H₂O", "label": "CHEMICAL_SYMBOL"}
+{"sentence": "The tallest mountain above sea level on Earth is Mount Everest.", "entity": "Mount Everest", "label": "MOUNTAIN"}
+{"sentence": "The author who created Sherlock Holmes was Arthur Conan Doyle.", "entity": "Arthur Conan Doyle", "label": "AUTHOR"}
+{"sentence": "The currency used in Japan is the yen.", "entity": "yen", "label": "CURRENCY"}
+{"sentence": "The largest planet in our Solar System is Jupiter.", "entity": "Jupiter", "label": "PLANET"}
+{"sentence": "The process of plants making food from sunlight is called photosynthesis.", "entity": "photosynthesis", "label": "BIOLOGICAL_PROCESS"}
+{"sentence": "The longest river in Africa is the Nile.", "entity": "Nile", "label": "RIVER"}
+{"sentence": "The element with atomic number 6 is carbon.", "entity": "carbon", "label": "ELEMENT"}
+{"sentence": "The Greek god of the sea is Poseidon.", "entity": "Poseidon", "label": "MYTHOLOGICAL_FIGURE"}
+{"sentence": "The painter of The Starry Night was Vincent van Gogh.", "entity": "Vincent van Gogh", "label": "ARTIST"}
+{"sentence": "The capital city of Canada is Ottawa.", "entity": "Ottawa", "label": "CAPITAL_CITY"}
+{"sentence": "The hardest natural substance known is diamond.", "entity": "diamond", "label": "MINERAL"}
+{"sentence": "The main protagonist of 1984 is Winston Smith.", "entity": "Winston Smith", "label": "FICTIONAL_CHARACTER"}
+{"sentence": "The scientist who proposed the law of universal gravitation was Isaac Newton.", "entity": "Isaac Newton", "label": "SCIENTIST"}
+{"sentence": "The smallest prime number is 2.", "entity": "2", "label": "NUMBER"}
+{"sentence": "The device that measures atmospheric pressure is a barometer.", "entity": "barometer", "label": "INSTRUMENT"}
+{"sentence": "The first woman to win a Nobel Prize was Marie Curie.", "entity": "Marie Curie", "label": "SCIENTIST"}
+{"sentence": "The layer of Earth directly beneath the crust is the mantle.", "entity": "mantle", "label": "GEOLOGY"}
+{"sentence": "The artist famous for the sculpture David is Michelangelo.", "entity": "Michelangelo", "label": "ARTIST"}
+{"sentence": "The only mammal capable of true flight is the bat.", "entity": "bat", "label": "ANIMAL"}
+{"sentence": "The capital of the state containing Seattle is Olympia.", "entity": "Olympia", "label": "CAPITAL_CITY"}
+{"sentence": "The constellation that contains the North Star is Ursa Minor.", "entity": "Ursa Minor", "label": "CONSTELLATION"}
+{"sentence": "The organ that pumps blood through the body is the heart.", "entity": "heart", "label": "ORGAN"}
+{"sentence": "The scientist who developed the polio vaccine was Jonas Salk.", "entity": "Jonas Salk", "label": "SCIENTIST"}
+{"sentence": "The city where the Colosseum is located is Rome.", "entity": "Rome", "label": "CITY"}
+{"sentence": "The language primarily spoken in Brazil is Portuguese.", "entity": "Portuguese", "label": "LANGUAGE"}
+{"sentence": "The smallest bone in the human body is the stapes.", "entity": "stapes", "label": "BONE"}
+{"sentence": "The branch of mathematics dealing with shapes is geometry.", "entity": "geometry", "label": "BRANCH_OF_MATH"}
+{"sentence": "The gas essential for human respiration is oxygen.", "entity": "oxygen", "label": "GAS"}
+{"sentence": "The novel in which Atticus Finch appears is To Kill a Mockingbird.", "entity": "To Kill a Mockingbird", "label": "LITERARY_WORK"}
+{"sentence": "The world’s largest coral reef system is the Great Barrier Reef.", "entity": "Great Barrier Reef", "label": "NATURAL_WONDER"}
+{"sentence": "The process by which ice turns directly into vapor is sublimation.", "entity": "sublimation", "label": "PHYSICAL_PROCESS"}
+{"sentence": "The capital of the U.S. state of Georgia is Atlanta.", "entity": "Atlanta", "label": "CAPITAL_CITY"}
+{"sentence": "The deepest point in Earth’s oceans is the Mariana Trench.", "entity": "Mariana Trench", "label": "OCEAN_FEATURE"}
+{"sentence": "The first artificial Earth satellite was Sputnik 1.", "entity": "Sputnik 1", "label": "SATELLITE"}
+{"sentence": "The scientist who coined the term cell was Robert Hooke.", "entity": "Robert Hooke", "label": "SCIENTIST"}
+{"sentence": "The smallest U.S. state by area is Rhode Island.", "entity": "Rhode Island", "label": "STATE"}
+{"sentence": "The mythological hero who slew Medusa was Perseus.", "entity": "Perseus", "label": "MYTHOLOGICAL_FIGURE"}
+{"sentence": "The pigment that gives plants their green color is chlorophyll.", "entity": "chlorophyll", "label": "PIGMENT"}
+{"sentence": "The river that flows through Paris is the Seine.", "entity": "Seine", "label": "RIVER"}
+{"sentence": "The animal known for its black-and-white stripes is the zebra.", "entity": "zebra", "label": "ANIMAL"}
+{"sentence": "The alloy made mostly of iron and carbon is steel.", "entity": "steel", "label": "ALLOY"}
+{"sentence": "The principle stating energy cannot be created or destroyed is conservation of energy.", "entity": "conservation of energy", "label": "PHYSICAL_PRINCIPLE"}
+{"sentence": "The instrument with 88 keys is the piano.", "entity": "piano", "label": "MUSICAL_INSTRUMENT"}
+{"sentence": "The largest desert on Earth by area is the Antarctic Desert.", "entity": "Antarctic Desert", "label": "DESERT"}
+{"sentence": "The philosopher who taught Alexander the Great was Aristotle.", "entity": "Aristotle", "label": "PHILOSOPHER"}
+{"sentence": "The power source for most calculators is a solar cell.", "entity": "solar cell", "label": "DEVICE"}
+{"sentence": "The historical period that followed the Middle Ages is the Renaissance.", "entity": "Renaissance", "label": "HISTORICAL_PERIOD"}
+{"sentence": "The author of Pride and Prejudice was Jane Austen.", "entity": "Jane Austen", "label": "AUTHOR"}
+{"sentence": "The branch of biology that studies heredity is genetics.", "entity": "genetics", "label": "BRANCH_OF_BIOLOGY"}
+{"sentence": "The phenomenon causing apples to fall is gravity.", "entity": "gravity", "label": "PHYSICS_CONCEPT"}
+{"sentence": "The main gas in Earth’s atmosphere is nitrogen.", "entity": "nitrogen", "label": "GAS"}
+{"sentence": "The numeral system that uses I, V, and X is Roman numerals.", "entity": "Roman numerals", "label": "NUMERAL_SYSTEM"}
+{"sentence": "The treaty that ended World War I was the Treaty of Versailles.", "entity": "Treaty of Versailles", "label": "TREATY"}
+{"sentence": "The largest internal organ in the human body is the liver.", "entity": "liver", "label": "ORGAN"}
+{"sentence": "The French term for already seen is déjà vu.", "entity": "déjà vu", "label": "FRENCH_TERM"}
+{"sentence": "The city where the Golden Gate Bridge is found is San Francisco.", "entity": "San Francisco", "label": "CITY"}
+{"sentence": "The scientist who discovered penicillin was Alexander Fleming.", "entity": "Alexander Fleming", "label": "SCIENTIST"}
+{"sentence": "The holiday celebrated on December 25 is Christmas.", "entity": "Christmas", "label": "HOLIDAY"}
+{"sentence": "The study of earthquakes is called seismology.", "entity": "seismology", "label": "BRANCH_OF_SCIENCE"}
+{"sentence": "The famous clock tower in London is colloquially called Big Ben.", "entity": "Big Ben", "label": "LANDMARK"}
+{"sentence": "The blood type known as the universal donor is O negative.", "entity": "O negative", "label": "BLOOD_TYPE"}
+{"sentence": "The first U.S. president was George Washington.", "entity": "George Washington", "label": "PERSON"}
+{"sentence": "The phobia of confined spaces is claustrophobia.", "entity": "claustrophobia", "label": "PHOBIA"}
+{"sentence": "The art style characterized by dripping paint is Abstract Expressionism.", "entity": "Abstract Expressionism", "label": "ART_STYLE"}
+{"sentence": "The only continent with no permanent residents is Antarctica.", "entity": "Antarctica", "label": "CONTINENT"}
+{"sentence": "The material mostly used to make glass is silica.", "entity": "silica", "label": "MATERIAL"}
+{"sentence": "The battle where Napoleon was defeated in 1815 was Waterloo.", "entity": "Waterloo", "label": "BATTLE"}
+{"sentence": "The medical imaging technique using magnetic fields is MRI.", "entity": "MRI", "label": "MEDICAL_TECHNIQUE"}
+{"sentence": "The tallest living land animal is the giraffe.", "entity": "giraffe", "label": "ANIMAL"}
+{"sentence": "The smallest unit of life is the cell.", "entity": "cell", "label": "BIOLOGY_TERM"}
+{"sentence": "The capital city of Australia is Canberra.", "entity": "Canberra", "label": "CAPITAL_CITY"}
+{"sentence": "The fictional detective who lives at 221B Baker Street is Sherlock Holmes.", "entity": "Sherlock Holmes", "label": "FICTIONAL_CHARACTER"}
+{"sentence": "The temperature at which water freezes on the Celsius scale is 0 degrees.", "entity": "0 degrees", "label": "TEMPERATURE"}
+{"sentence": "The spacecraft that first landed humans on the Moon was Apollo 11.", "entity": "Apollo 11", "label": "SPACECRAFT"}
+{"sentence": "The most abundant metal in Earth’s crust is aluminum.", "entity": "aluminum", "label": "ELEMENT"}
+{"sentence": "The epic poem attributed to Homer about Troy is the Iliad.", "entity": "Iliad", "label": "LITERARY_WORK"}
+{"sentence": "The branch of government that interprets laws is the judicial.", "entity": "judicial", "label": "GOVERNMENT_BRANCH"}
+{"sentence": "The first element in the periodic table is hydrogen.", "entity": "hydrogen", "label": "ELEMENT"}
+{"sentence": "The basketball player known as His Airness is Michael Jordan.", "entity": "Michael Jordan", "label": "ATHLETE"}
+{"sentence": "The galaxy that includes Earth is the Milky Way.", "entity": "Milky Way", "label": "GALAXY"}
+{"sentence": "The process by which caterpillars become butterflies is metamorphosis.", "entity": "metamorphosis", "label": "BIOLOGICAL_PROCESS"}
+{"sentence": "The Italian city famous for its canals is Venice.", "entity": "Venice", "label": "CITY"}
+{"sentence": "The vitamin essential for blood clotting is vitamin K.", "entity": "vitamin K", "label": "VITAMIN"}
+{"sentence": "The eruption that destroyed Pompeii came from Mount Vesuvius.", "entity": "Mount Vesuvius", "label": "VOLCANO"}
+{"sentence": "The tale featuring a girl and a wolf is Little Red Riding Hood.", "entity": "Little Red Riding Hood", "label": "FAIRY_TALE"}
+{"sentence": "The line of latitude at 0° is the equator.", "entity": "equator", "label": "GEOGRAPHIC_LINE"}
+{"sentence": "The composer of the Fifth Symphony beginning da-da-da-dum was Beethoven.", "entity": "Beethoven", "label": "COMPOSER"}
+{"sentence": "The largest moon of Jupiter is Ganymede.", "entity": "Ganymede", "label": "MOON"}
+{"sentence": "The inventor of the telephone was Alexander Graham Bell.", "entity": "Alexander Graham Bell", "label": "INVENTOR"}
+{"sentence": "The term for animals active at night is nocturnal.", "entity": "nocturnal", "label": "TERM"}
+{"sentence": "The Roman goddess of love and beauty is Venus.", "entity": "Venus", "label": "MYTHOLOGICAL_FIGURE"}
+{"sentence": "The branch of physics dealing with heat is thermodynamics.", "entity": "thermodynamics", "label": "BRANCH_OF_PHYSICS"}
+{"sentence": "The country known as the Land of the Rising Sun is Japan.", "entity": "Japan", "label": "COUNTRY"}
+{"sentence": "The tool used to measure electrical current is an ammeter.", "entity": "ammeter", "label": "INSTRUMENT"}
+{"sentence": "The first book of the Bible is Genesis.", "entity": "Genesis", "label": "RELIGIOUS_TEXT"}
+{"sentence": "The ecosystem dominated by coniferous trees is the taiga.", "entity": "taiga", "label": "ECOSYSTEM"}
+{"sentence": "The fastest land animal in the world is the cheetah.", "entity": "cheetah", "label": "ANIMAL"}
+{"sentence": "The gas used to fill balloons so they float is helium.", "entity": "helium", "label": "GAS"}
+{"sentence": "The sea bordered by both Europe and Africa is the Mediterranean.", "entity": "Mediterranean", "label": "SEA"}
+{"sentence": "The bustling capital of South Korea is Seoul.", "entity": "Seoul", "label": "CITY"}
+{"sentence": "The Han River flows gracefully through the heart of Seoul.", "entity": "Seoul", "label": "CITY"}
+{"sentence": "The Olympic Park commemorates the 1988 Games in Seoul.", "entity": "Seoul", "label": "CITY"}
+{"sentence": "The Itaewon neighborhood is famed for global cuisine in Seoul.", "entity": "Seoul", "label": "CITY"}
+{"sentence": "The cable car ascends Namsan Mountain in Seoul.", "entity": "Seoul", "label": "CITY"}
+{"sentence": "The Hangang fireworks festival dazzles the night sky over Seoul.", "entity": "Seoul", "label": "CITY"}
+{"sentence": "The Mapo Hangang Park hosts picnickers beside Seoul.", "entity": "Seoul", "label": "CITY"}
+{"sentence": "The Seongbuk-dong hillside reveals hidden hanok in Seoul.", "entity": "Seoul", "label": "CITY"}
+{"sentence": "The Gangseo Marsh Wetland Park protects wildlife in Seoul.", "entity": "Seoul", "label": "CITY"}
+{"sentence": "The Samcheong-dong cafés exude artistic flair in Seoul.", "entity": "Seoul", "label": "CITY"}
+{"sentence": "The Cheong Wa Dae Sarangchae museum explores leadership history in Seoul.", "entity": "Seoul", "label": "CITY"}
+{"sentence": "The Haebangchon district melds expat vibes into Seoul.", "entity": "Seoul", "label": "CITY"}
+{"sentence": "The Dongjak Bridge offers sunset vistas in Seoul.", "entity": "Seoul", "label": "CITY"}
+{"sentence": "The Royal Tombs of the Joseon Dynasty ring the outskirts of Seoul.", "entity": "Seoul", "label": "CITY"}
+{"sentence": "The Seongsu-dong cafés occupy repurposed factories in Seoul.", "entity": "Seoul", "label": "CITY"}
+{"sentence": "The Seonyudo Island park sits mid-river in Seoul.", "entity": "Seoul", "label": "CITY"}
+{"sentence": "The Banpo Rainbow Fountain arches across a bridge in Seoul.", "entity": "Seoul", "label": "CITY"}
+{"sentence": "The Korean Gugak Center preserves traditional music in Seoul.", "entity": "Seoul", "label": "CITY"}
+{"sentence": "The Seochon district offers slow-paced alleys in Seoul.", "entity": "Seoul", "label": "CITY"}
+{"sentence": "The Yangjae Citizen’s Forest provides autumn foliage in Seoul.", "entity": "Seoul", "label": "CITY"}
+{"sentence": "The Sejong-ro boulevard hosts cultural parades in Seoul.", "entity": "Seoul", "label": "CITY"}
+{"sentence": "The Lotte World indoor theme park thrills visitors in Seoul.", "entity": "Seoul", "label": "CITY"}
+{"sentence": "The Gwanghwamun Square features Admiral Yi statue in Seoul.", "entity": "Seoul", "label": "CITY"}
+{"sentence": "The Dongdaemun night market fuels late-night eats in Seoul.", "entity": "Seoul", "label": "CITY"}
+{"sentence": "The Ewha Mural Village invites Instagram shots of Seoul.", "entity": "Seoul", "label": "CITY"}
+{"sentence": "The sunrise at Naksan Park paints rooftops of Seoul.", "entity": "Seoul", "label": "CITY"}
+{"sentence": "The modern City Hall blends glass waves into Seoul.", "entity": "Seoul", "label": "CITY"}
+{"sentence": "The 63 Building once towered as tallest in Seoul.", "entity": "Seoul", "label": "CITY"}
+{"sentence": "The Nanji Hangang Park rose from landfill in Seoul.", "entity": "Seoul", "label": "CITY"}
+{"sentence": "The Gyeongui Line Forest Park stitches rail history into Seoul.", "entity": "Seoul", "label": "CITY"}
+{"sentence": "The Samyang ramen factory tour delights foodies in Seoul.", "entity": "Seoul", "label": "CITY"}
+{"sentence": "The Baegun Lake reflects cherry blossoms in Seoul.", "entity": "Seoul", "label": "CITY"}
+{"sentence": "The Seochon Tongin Market uses yeopjeon tokens in Seoul.", "entity": "Seoul", "label": "CITY"}
+{"sentence": "The K-pop concerts pack stadiums throughout Seoul.", "entity": "Seoul", "label": "CITY"}
+{"sentence": "The Daehangno area thrives with theater in Seoul.", "entity": "Seoul", "label": "CITY"}
+{"sentence": "The royal secret garden Huwon hides behind Changdeokgung in Seoul.", "entity": "Seoul", "label": "CITY"}
+{"sentence": "The Sookmyung Women’s University area bustles with cafés in Seoul.", "entity": "Seoul", "label": "CITY"}
+{"sentence": "The Hongje Yuyeon footbridge lights water underpasses in Seoul.", "entity": "Seoul", "label": "CITY"}
+{"sentence": "The royal clothing museum at Gyeongbokgung educates fashion history in Seoul.", "entity": "Seoul", "label": "CITY"}
+{"sentence": "The Ara Waterway bike route links the river west of Seoul.", "entity": "Seoul", "label": "CITY"}
+{"sentence": "The Pyeongchang-dong galleries cluster north of Seoul.", "entity": "Seoul", "label": "CITY"}
+{"sentence": "The SeMA Bunker shows Cold War history in Seoul.", "entity": "Seoul", "label": "CITY"}
+{"sentence": "The Night at the Palaces program opens after-hours in Seoul.", "entity": "Seoul", "label": "CITY"}
+{"sentence": "The Seodaemun-gu district blends hip cafés with history in Seoul.", "entity": "Seoul", "label": "CITY"}
+{"sentence": "The Yangcheon Hanok Village resurrects timber houses in Seoul.", "entity": "Seoul", "label": "CITY"}
+{"sentence": "The Euljiro printing alley showcases industrial chic in Seoul.", "entity": "Seoul", "label": "CITY"}
+{"sentence": "The Halloween crowds gather in Itaewon streets of Seoul.", "entity": "Seoul", "label": "CITY"}
+{"sentence": "The Hangang Moonlight Market serves global street food beside Seoul.", "entity": "Seoul", "label": "CITY"}
