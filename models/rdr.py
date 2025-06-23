@@ -33,6 +33,33 @@ class RDR():
         print('The number of samples included in the Relaxed Decision Region:',len(underlying_samples))
         
         return underlying_samples, rdr_neurons, rdr_states
+    def distance(self, target_idx, feature_idx=None):
+        """
+        Binary Hamming distance between every configuration vector and
+        `self.configs[target_idx]`.
+
+        Parameters
+        ----------
+        target_idx : int
+            Row in `self.configs` used as the query.
+        feature_idx : 1-D index array or None
+            If provided, distance is computed only over those dimensions.
+
+        Returns
+        -------
+        dists : (N,) ndarray of int
+            Hamming distance for each sample.
+        """
+        if feature_idx is not None:
+            cfg = self.configs[:, feature_idx]
+            tgt = self.configs[target_idx, feature_idx]
+        else:
+            cfg = self.configs
+            tgt = self.configs[target_idx]
+
+        # XOR + sum gives Hamming distance
+        dists = np.bitwise_xor(cfg, tgt).sum(axis=1)
+        return dists.astype(np.int32)
     
 def visualize(sample_indices, images):
     rand_idx = np.random.choice(len(sample_indices), 10, replace=False)

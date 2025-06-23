@@ -14,7 +14,9 @@ from __future__ import annotations
 import torch
 import torch.nn as nn
 from transformers import AutoModelForCausalLM, AutoTokenizer
+import numpy as np
 
+BINS = 64
 
 class LlamaRDR(nn.Module):
     """

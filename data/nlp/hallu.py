@@ -28,6 +28,10 @@ class HalluData(Dataset):
     def __init__(self, path=data_path):
         with open(path) as f:
             rows = [add_offsets(json.loads(l)) for l in f]
+
+        rows = [r for r in rows if r["entity_token_idx"] != 0]
+
+
         self.rows = rows
     def __len__(self):  return len(self.rows)
     def __getitem__(self, i): return self.rows[i]

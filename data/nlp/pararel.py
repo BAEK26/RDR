@@ -1,184 +1,102 @@
-#!/usr/bin/env python
-# run_llama31_pararel_batched.py
-"""
-Infer PARAREL object predictions with Meta-Llama-3.1-Instruct — batched,
-with per-sample prompt-length slicing.
-"""
-
-import json
-import argparse
-import re
-import torch
-from torch.utils.data import DataLoader
+# pararel_data.py
+import torch, json
+from datasets import load_dataset
+from torch.utils.data import Dataset
+from transformers import AutoTokenizer
+from data.nlp.helpers import char_to_token          # unchanged
 from pathlib import Path
 from tqdm import tqdm
-from datasets import load_dataset
-from transformers import (
-    AutoTokenizer,
-    AutoModelForCausalLM,
-    GenerationConfig,
-)
-debug = False
-def build_chat_messages(ex):
-    subject: str = ex["subject"]
-    template: str = ex["template"]
-    candidates = ex["candidates"]
-    user_sentence = (
-        "answer candidates:" + ", ".join(candidates) + "\n" +
-        ex["query"]
+# same tokenizer you already use elsewhere
+tok = AutoTokenizer.from_pretrained("meta-llama/Llama-3.1-8B-Instruct")
+
+
+def add_offsets(row):
+    """
+    Enrich a raw Pararel row with:
+      • sentence         – instantiated template containing subject & object
+      • entity           – alias for object
+      • char_span        – (start, end) in characters
+      • entity_token_idx – first sub-token idx of entity in that sentence
+      • prediction / correct flags (mirrors your HalluData layout)
+    """
+    subj   = row["subject"]
+    ent    = row["entity"] # row.get("object")
+    rel_tmpl = row.get("relation") # row.get("template")
+
+    # 1) Try the existing query; 2) fall back to full template; 3) append object.
+    base_sent = row.get("query") or row.get("sentence") or ""
+    if ent not in base_sent:                     # usual case for Pararel
+        if rel_tmpl:                             # e.g. “[X] is located in [Y].”
+            sent = rel_tmpl.replace("[X]", subj).replace("[Y]", ent)
+        else:                                    # ultimate fallback
+            sent = f"{base_sent.strip()} {ent}"
+    else:
+        sent = base_sent
+
+    # char offsets & token index
+    start = sent.index(ent)           # guaranteed to exist now
+    end   = start + len(ent)
+    tok_idx = char_to_token(sent, (start, end))+1  # your helper
+
+    row.update(
+        sentence          = sent,
+        entity            = ent, # ground-truth object
+        char_span         = (start, end),
+        entity_token_idx  = tok_idx,
+        prediction        = row["prediction"],       
+        correct           = row["correct"]       
     )
-    return [
-        {
-            "role": "system",
-            "content": (
-                "You are a knowledgeable extraction assistant. Given a list of answer candidates and a user query, pick exactly one entity from the candidates that best completes the query. Respond with only that entity, without any extra commentary."
-            ),
-        },
-        {"role": "user", "content": user_sentence},
-    ]
+    return row
 
-def postprocess(text: str) -> str:
-    if "assistant" in text:
-        # Llama-3.1-Instruct sometimes adds "assistant" at the start
-        text = text.split("assistant", 1)[-1]
-    text = text.strip().split("\n")[0]
-    return re.sub(r'^[\"\'“”‘’\s]+|[\"\'“”‘’\s]+$', "", text)
+def filter_entity(row):
+    """
+    Only use entity
+    """
+    row["sentence"] = " "+row.get("entity", "")
+    row = add_offsets(row)  # reuse the same offset logic
+    decoded_entity = tok.decode(tok.encode(row['sentence'])[row['entity_token_idx']])
+    if decoded_entity.strip() != row["entity"].strip():
+        # raise ValueError(f"Entity token mismatch: {row['sentence']} vs {row['entity']}")
+        # print(f"Entity token mismatch: #{row['entity']}# vs #{decoded_entity}#")
+        pass
+    row['decoded_entity'] = decoded_entity
+    return row
+    
 
-def collate_fn(examples):
-    return examples  # we’ll batch‐tokenize manually
+class PararelData(Dataset):
+    """Pararel → RDR-ready dataset, same interface as HalluData."""
+    def __init__(self, split="train", entity_option=None):
+        # raw = load_dataset("coastalcph/pararel_patterns", split=split)  # 
 
-def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--model_id",
-                        default="meta-llama/Llama-3.1-8B-Instruct")
-    parser.add_argument("--max_rows", type=int, default=None)
-    parser.add_argument("--batch_size", type=int, default=64)
-    parser.add_argument("--outfile",
-                        default="pararel_ent_llama31_predictions.jsonl")
-    args = parser.parse_args()
+        with open('/data8/baek/dehallu/RDR/data/nlp/pararel_llama31_predictions.jsonl', 'r') as f:
+            raw = [json.loads(line) for line in f.readlines()]
+        # enrich & drop rows where token mapping failed (idx == 0)
+        if "entity only" in entity_option.lower():
+            self.rows = [
+            ex for ex in tqdm(map(filter_entity, raw), total = len(raw), desc= "Add offsets", unit="rows") if ex["entity"] == ex["decoded_entity"].strip()
+        ]
+        else:
+            self.rows = [
+                ex for ex in tqdm(map(add_offsets, raw), total = len(raw), desc= "Add offsets", unit="rows") if ex["entity_token_idx"] != 0
+            ]
 
-    print("Loading tokenizer & model …")
-    tokenizer = AutoTokenizer.from_pretrained(args.model_id, use_fast=True)
-    tokenizer.pad_token = tokenizer.eos_token
-    tokenizer.padding_side = "left"  # for batched generation
-    model = AutoModelForCausalLM.from_pretrained(
-        args.model_id,
-        torch_dtype=torch.float16,
-        device_map="auto",
-    )
-    gen_cfg = GenerationConfig(max_new_tokens=16)
-    model.config.pad_token_id = tokenizer.eos_token_id
-    print("Loading PARAREL patterns …")
-    ds = load_dataset("coastalcph/pararel_patterns", split="train")
-    # ds = ds.filter(
-    #     lambda ex: 'edison' in ex["subject"].lower(),
-    #     # exclude the trivial template
-    # )
-    if args.max_rows:
-        ds = ds.select(range(args.max_rows))
+    def __len__(self):
+        return len(self.rows)
 
-    loader = DataLoader(ds, batch_size=args.batch_size,
-                        shuffle=False, collate_fn=collate_fn)
-
-    results = []
-    correct = 0
-    debug_whole = []
-    debug_index = []
-
-    for batch in tqdm(loader, desc="infer"):
-        # 1) build raw prompts
-        messages = [build_chat_messages(ex)
-                    for ex in batch]
-        prompts = tokenizer.apply_chat_template(
-            messages,
-            tokenize=False,
-            add_generation_prompt=True,
-        )
-
-        # 2) compute each prompt’s true length (no padding)
-        raw_enc = tokenizer(prompts, padding=False, truncation=True)
-        prompt_lengths = [len(ids) for ids in raw_enc["input_ids"]]
-
-        # 3) tokenize with padding for batch
-        inputs = tokenizer(prompts,
-                           return_tensors="pt",
-                           padding=True,
-                           truncation=False
-                           ).to(model.device)
-
-        # 4) generate continuations
-        outputs = model.generate(
-            input_ids=inputs["input_ids"],
-            attention_mask=inputs["attention_mask"],
-            pad_token_id=tokenizer.eos_token_id,
-            generation_config=gen_cfg,
-        )
-        # outputs shape: [bs, padded_prompt_len + gen_len]
-
-        # 5) slice per-sample based on its prompt_length
-        preds = []
-        for i, length in enumerate(prompt_lengths):
-            gen_ids = outputs[i, length:]              # only the new tokens
-            text = tokenizer.decode(gen_ids,
-                                    skip_special_tokens=True)
-            debug_text = tokenizer.decode(outputs[i],
-                                          skip_special_tokens=True)
-            if debug:
-                debug_whole.append(debug_text)
-                debug_index.append(length)
-                if i == 4:
-                    import pdb; pdb.set_trace()  # for debugging
-            preds.append(postprocess(text))
+    def __getitem__(self, idx):
+        return self.rows[idx]
 
 
-        # 6) record results
-        for ex, pred in zip(batch, preds):
-            is_correct = pred.lower() == ex["object"].lower()
-            results.append({
-                "correct" :       is_correct,
-                "sentence":       ex["query"],
-                "entity":           ex["object"],
-                "subject":        ex["subject"],
-                "relation":       ex["template"],
-                "prediction":     pred,
-                "candidates":     ex["candidates"],
-            })
-            if is_correct:
-                correct += 1
-
-    acc = correct / len(results)
-    print(f"\nAccuracy: {acc:.3%}  ({correct}/{len(results)})")
-
-    out_path = Path(__file__).parent / args.outfile
-    with out_path.open("w", encoding="utf-8") as f:
-        for row in results:
-            f.write(json.dumps(row, ensure_ascii=False) + "\n")
-    print(f"Saved predictions → {out_path.resolve()}")
-
-    print("Filter rows with entity named 'edison' ...")
-    filtered = [r for r in results if r["entity"].lower() == "edison"]
-    print(f"Found {len(filtered)} rows with entity 'edison'.")
-
-    if debug:
-        print("\n--- DEBUG: whole prompts saved---")
-        for i, (text, debug_len) in enumerate(zip(debug_whole, debug_index)):
-            print(f"Prompt {i}: {text}")
-            print(text[debug_len:], "→", results[i]["prediction"])
+def get_split(split="train", entity_option=None):   # keeps the external API identical
+    return PararelData(split=split, entity_option=entity_option)
 
 
-def stats():
-    ds = load_dataset("coastalcph/pararel_patterns", split="train")
-    # print(f"Dataset size: {len(ds)}")
-    # print("Sample rows:")
-    # print(set(ds["template"]))
-
-    #find edison
-    edison_rows = [r for r in ds if "edison" in r["subject"].lower()]
-    tmp = [r for r in ds if "edison" in r["object"].lower()]
-
-    print(f"Found {len(edison_rows)} rows with subject containing 'edison'.")
-    print(f"Found {len(tmp)} rows with object containing 'edison'.")
-
+# quick sanity check
 if __name__ == "__main__":
-    main()
-    # stats()
+    ds = get_split()
+    print(f"Loaded {len(ds)} Pararel samples with entity spans.")
+    for i in range(3):
+        ex = ds[i]
+        print(f"▶ {ex['sentence']}")
+        print(f"   entity='{ex['entity']}' char_span={ex['char_span']} token_idx={ex['entity_token_idx']}")
+        print(f"   entity token: #{tok.decode(tok.encode(ex['sentence'])[ex['entity_token_idx']])}#")
